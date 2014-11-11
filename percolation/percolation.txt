@@ -1,0 +1,29 @@
+Percolation [an union-find application].
+
+Consider an $N \times N$ grid of blocks; each block is a called a site. 
+Each site is open (not shaded) with probability p or blocked (shaded) with probability 1-p. 
+A system percolates if and only if a block on the top row of the grid and a block on the bottom row of the grid 
+are connected by open sites, where two adjacent blocks are connected if and only if both are open.
+
+Application: 
+model 								system				vacant site		occupied site			percolates
+electricity							material			conductor		insulated				conducts
+fluid flow							material			empty			blocked					porous
+social interaction					population			person			empty					communicates
+rock fractures from earthquakes		fracture networks	fractures		crystalline rock		connectivity of the network
+
+
+Given a randomized model, i.e., a site is vacant with a given probability, if the probability is low, 
+then there is a good chance that the system will not percolate. 
+On the other hand, if the probability is high, then there is a good chance that the system will percolate. 
+When this probability is somewhere in the middle, it is an open question (in mathematics and in physics) 
+on determining whether or not the system percolates. 
+
+Percolation phase transition: 
+When N >> 0, this theory guarantees the existence of a sharp threshold p* such that the following holds: 
+1. when p > p*, the system almost certainly percolates, 
+2. when p < p*, the system almost certainly does not percolate. 
+
+Open problem: determine the value of p*. 
+
+
