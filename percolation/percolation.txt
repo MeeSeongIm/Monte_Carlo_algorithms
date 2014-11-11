@@ -107,6 +107,6 @@ We know from above that a system percolates if
 * the top virtual site is connected to the bottom virtual site by a path.
 
 (POSSIBLY OPEN) QUESTION: what class of (adjacency) matrices guarantee a percolating system? 
-Or better yet, describe all matrices which represent a percolating system. 
+Or better yet, describe all matrices which represent a percolating system.
 
 
