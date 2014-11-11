@@ -5,14 +5,38 @@ Each site is open (not shaded) with probability p or blocked (shaded) with proba
 A system percolates if and only if a block on the top row of the grid and a block on the bottom row of the grid 
 are connected by open sites, where two adjacent blocks are connected if and only if both are open.
 
-Application: 
-model 								            system				    vacant site		occupied site			  percolates
-electricity							          material			    conductor		  insulated				    conducts
-fluid flow							          material			    empty			    blocked					    porous
-social interaction					      population			  person			  empty					      communicates
-rock fractures from earthquakes		fracture networks	fractures		  crystalline rock		connectivity of the network
+Application (four scenarios are given using a, b, c, d): 
+MODEL
+a. electricity
+b. fluid flow
+c. social interaction
+d. rock fractures from earthquakes
 
+WHAT DOES THE SYSTEM REPRESENT?
+a. material
+b. material
+c. population
+d. fracture networks
 
+VACANT SITE IS 
+a. conductor
+b. empty
+c. person
+d. fractures
+
+OCCUPIED SITE IS
+a. insulated
+b. blocked
+c. empty
+d. crystalline rock
+
+INTERPRETATION OF PERCOLATES
+a. conducts
+b. porous
+c. communicates
+d. connectivity of the network
+
+ 
 Given a randomized model, i.e., a site is vacant with a given probability, if the probability is low, 
 then there is a good chance that the system will not percolate. 
 On the other hand, if the probability is high, then there is a good chance that the system will percolate. 
