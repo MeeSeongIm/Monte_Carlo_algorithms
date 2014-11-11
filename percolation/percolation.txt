@@ -6,11 +6,11 @@ A system percolates if and only if a block on the top row of the grid and a bloc
 are connected by open sites, where two adjacent blocks are connected if and only if both are open.
 
 Application: 
-model 								system				vacant site		occupied site			percolates
-electricity							material			conductor		insulated				conducts
-fluid flow							material			empty			blocked					porous
-social interaction					population			person			empty					communicates
-rock fractures from earthquakes		fracture networks	fractures		crystalline rock		connectivity of the network
+model 								            system				    vacant site		occupied site			  percolates
+electricity							          material			    conductor		  insulated				    conducts
+fluid flow							          material			    empty			    blocked					    porous
+social interaction					      population			  person			  empty					      communicates
+rock fractures from earthquakes		fracture networks	fractures		  crystalline rock		connectivity of the network
 
 
 Given a randomized model, i.e., a site is vacant with a given probability, if the probability is low, 
