@@ -100,5 +100,13 @@ whether the virtual top site is connected to the virtual bottom site.
 To model opening a new site, we connect the corresponding node to all adjacent nodes 
 (left, right, top, bottom) with an edge (we need to implement at most 4 calls to connected()).
  
- 
- 
+NOTE: a graph (whether it's weighted, directed, etc) could be represented using an adjacency matrix. 
+We know from above that a system percolates if
+* a block along the top row of a grid is connected to a block along the bottom row of a grid by open sites, or 
+* a node on the top row of a graph is connected to a node on the bottom row of a graph by edges, or 
+* the top virtual site is connected to the bottom virtual site by a path.
+
+(POSSIBLY OPEN) QUESTION: what class of (adjacency) matrices guarantee a percolating system? 
+Or better yet, describe all matrices which represent a percolating system. 
+
+
