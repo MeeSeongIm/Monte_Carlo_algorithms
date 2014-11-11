@@ -50,4 +50,55 @@ When N >> 0, this theory guarantees the existence of a sharp threshold p* such t
 
 Open problem: determine the value of p*. 
 
+Using mathematical models: this is still an open problem. 
 
+Computational approach: run simulations to determine p* using fast union-find algorithms. 
+
+More precisely, initialize the entire $N\times N$ grid to be blocked. 
+Program random sites to be open until a block on the top of the grid is connected to a block on the bottom of the grid.
+The moment when the system percolates, stop the Monte Carlo simulation and estimate the threshold value p*, 
+which is the vacancy percentage of the system. 
+Iterate until satisfied to obtain a better estimate of p*. 
+
+Grid-Graph duality:
+How does one check whether or not an $N\times N$ system percolates? 
+Create a node (a vertex) corresponding to each site and name them 0 to N^2-1. 
+We say that sites are in the same component if and only if they are connected by open sites, 
+and whenever two sites are connected by open sites, we put an edge to the corresponding nodes.
+
+Example: N = 5. The symbol X represents a blocked site while the empty space represents an open site.
+[ , ,X, ,X]
+[X,X,X, ,X]
+[X, ,X, , ]
+[ ,X, ,X,X]
+[ , ,X, , ]
+
+o-o o o o
+      |
+o o o o o
+      |
+o o o o-o
+
+o o o o o
+|
+o-o o o-o
+
+Thus checking when a system percolates is equivalent to checking 
+if a path exists from a node in the top row to a node in the bottom row.
+This brute-force algorithm calls connected() N^2 times for we need to check 
+if any of the nodes in the top row is connected to any of the nodes in the bottom row.
+This algorithm takes up too much memory (and is too slow) when N is large. 
+Instead, we use a trick by creating a virtual site on the top and on the bottom. 
+
+A virtual top site is created as follows: 
+create a node above the top row and connect it to each of the nodes in the top row. 
+Similarly, a virtual bottom site is created by adding a new node below the bottom row 
+and connect it to each of the nodes in the bottom row.
+Thus to check whether or not a system percolates, we only need to check 
+whether the virtual top site is connected to the virtual bottom site. 
+
+To model opening a new site, we connect the corresponding node to all adjacent nodes 
+(left, right, top, bottom) with an edge (we need to implement at most 4 calls to connected()).
+ 
+ 
+ 
