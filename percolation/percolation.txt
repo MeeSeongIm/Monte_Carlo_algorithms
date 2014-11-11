@@ -50,7 +50,7 @@ When N >> 0, this theory guarantees the existence of a sharp threshold p* such t
 
 Open problem: determine the value of p*. 
 
-Using mathematical models: this is still an open problem. 
+Using mathematical models: this is still an open problem.
 
 Computational approach: run simulations to determine p* using fast union-find algorithms. 
 
