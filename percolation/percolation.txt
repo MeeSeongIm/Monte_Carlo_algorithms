@@ -22,7 +22,7 @@ VACANT SITE IS
 a. conductor
 b. empty
 c. person
-d. fractures
+d. fracture
 
 OCCUPIED SITE IS
 a. insulated
