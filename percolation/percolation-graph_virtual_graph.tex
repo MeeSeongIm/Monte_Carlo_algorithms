@@ -1,0 +1,68 @@
+
+
+\documentclass[reqno]{amsart}
+\usepackage{url}
+\usepackage[colorlinks=true, pdfstartview=FitV,
+linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{stackrel} 
+\usepackage[all,cmtip]{xy} 
+  
+  
+\begin{document}
+
+This file corresponds to
+
+ \href{https://github.com/MeeSeongIm/Monte\_Carlo\_algorithms/blob/master/percolation/percolation.txt}{github.com/MeeSeongIm/Monte\_Carlo\_algorithms/blob/master/percolation/percolation.txt}.
+ 
+\bigskip 
+\bigskip 
+
+
+  
+The graph below is a representation of a $5\times 5$ grid of blocks. 
+\[ 
+\xymatrix@-1pc{
+\bullet \ar@{-}[rr] & & \bullet & & \bullet & & \bullet \ar@{-}[dd]& & \bullet \\ 
+ & &   & &   & &   & & \\ 
+ \bullet & & \bullet & & \bullet & & \bullet \ar@{-}[dd]& & \bullet \\ 
+ & &   & &   & &   & & \\ 
+ \bullet & & \bullet & & \bullet & & \bullet \ar@{-}[rr]& & \bullet \\  
+ & &   & &   & &   & & \\
+  \bullet \ar@{-}[dd]& & \bullet & & \bullet & & \bullet & & \bullet \\  
+ & &   & &   & &   & & \\
+  \bullet \ar@{-}[rr]& & \bullet & & \bullet & & \bullet \ar@{-}[rr]& & \bullet \\  
+} 
+\] 
+
+\bigskip 
+\bigskip 
+\bigskip 
+
+
+The graph below is a representation of a $5\times 5$ grid of blocks with a virtual top site and a virtual bottom site. 
+
+\[ 
+\xymatrix@-1pc{
+ & &   & & \bullet \ar@{-}[lllldd] \ar@{-}[lldd] \ar@{-}[dd] \ar@{-}[rrdd] \ar@{-}[rrrrdd]& &   & & \\
+ & &   & &   & &   & & \\
+\bullet \ar@{-}[rr] & & \bullet & & \bullet & & \bullet \ar@{-}[dd]& & \bullet \\ 
+ & &   & &   & &   & & \\ 
+ \bullet & & \bullet & & \bullet & & \bullet \ar@{-}[dd]& & \bullet \\ 
+ & &   & &   & &   & & \\ 
+ \bullet & & \bullet & & \bullet & & \bullet \ar@{-}[rr]& & \bullet \\  
+ & &   & &   & &   & & \\
+  \bullet \ar@{-}[dd]& & \bullet & & \bullet & & \bullet & & \bullet \\  
+ & &   & &   & &   & & \\
+  \bullet \ar@{-}[rr]& & \bullet & & \bullet & & \bullet \ar@{-}[rr]& & \bullet \\  
+   & &   & &   & &   & & \\ 
+   & &   & & \bullet \ar@{-}[lllluu] \ar@{-}[lluu] \ar@{-}[uu] \ar@{-}[rruu] \ar@{-}[rrrruu]& &   & & \\
+} 
+\] 
+
+
+
+
+\end{document}    
+  
+  
+  
